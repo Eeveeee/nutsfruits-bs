@@ -5,5 +5,13 @@ body {
 .container {
   max-width: 1170px;
 }
+a {
+  color: white;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
 @import "_header.scss";
 @import "_intro.scss";
+@import "_catalog.scss";

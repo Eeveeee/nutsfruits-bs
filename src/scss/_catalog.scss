@@ -1,0 +1,70 @@
+.catalog {
+  background: $theme-background-color;
+  &__blocks {
+    padding: 100px 0;
+  }
+  &__header {
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 48px;
+    font-family: Podkova;
+  }
+  &-card {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(162, 162, 162, 0.3);
+      z-index: 2;
+    }
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    height: 396px;
+    width: 100%;
+    font-family: Podkova;
+    font-weight: bold;
+    font-size: 36px;
+    color: $text-color-light;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    a {
+      color: white;
+      position: relative;
+      z-index: 3;
+    }
+  }
+  .card {
+    &-nuts {
+      background: url(../img/catalog/nuts.png);
+    }
+    &-fruits {
+      background: url(../img/catalog/fruits.png);
+    }
+    &-seeds {
+      background: url(../img/catalog/seeds.png);
+    }
+    &-big {
+      margin-top: 25px;
+      background: url(../img/catalog/show-all.png);
+      width: 100%;
+      height: 180px;
+      a {
+        border-radius: 3px;
+        border-bottom: 2px solid white;
+      }
+    }
+  }
+  &-free {
+    top: 130%;
+    right: 0;
+    z-index: 4;
+    position: absolute;
+  }
+}
