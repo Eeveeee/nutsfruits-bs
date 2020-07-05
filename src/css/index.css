@@ -16,7 +16,7 @@ a:hover {
 }
 
 .header {
-  background: #433232;
+  background: #281515;
 }
 
 .header__blocks {
@@ -418,12 +418,51 @@ a:hover {
 .submit-button {
   color: #ffffff;
   padding: 19px 0;
-  background: #433232;
+  background: #281515;
 }
 
 .row .col-12 small {
   margin-top: 10px;
   color: #ffffff;
   font-size: 10px;
+}
+
+.footer {
+  background: #433232;
+}
+
+.footer__blocks {
+  color: #ffffff;
+  padding: 25px 0 37px 0;
+}
+
+.footer-navbar {
+  padding-right: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  position: absolute;
+  bottom: 50%;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.footer-hotline {
+  margin-bottom: 25px;
+  padding-right: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social a img {
+  width: 20;
+  height: 23px;
 }
 /*# sourceMappingURL=index.css.map */

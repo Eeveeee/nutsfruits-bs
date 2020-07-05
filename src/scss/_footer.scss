@@ -1,0 +1,34 @@
+.footer {
+  background: $footer-background;
+  &__blocks {
+    color: $text-color-light;
+    padding: 25px 0 37px 0;
+  }
+  &-navbar {
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-logo {
+    position: absolute;
+    bottom: 50%;
+    border-radius: 50%;
+    z-index: 4;
+  }
+  &-hotline {
+    margin-bottom: 25px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-social {
+    display: flex;
+    justify-content: space-between;
+    a {
+      img {
+        width: 20;
+        height: 23px;
+      }
+    }
+  }
+}
