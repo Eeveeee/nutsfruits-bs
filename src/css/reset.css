@@ -147,3 +147,7 @@ input[type='search']::-webkit-search-results-decoration {
 a {
   color: white;
 }
+
+button {
+  border: none;
+}
