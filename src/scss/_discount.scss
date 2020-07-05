@@ -1,0 +1,36 @@
+.discount {
+  &__blocks {
+    padding: 94px 0 0 0;
+  }
+  &__header {
+    margin-bottom: 60px;
+    text-align: center;
+    font-family: Podkova;
+    font-weight: bold;
+    font-size: 48px;
+  }
+  &-info {
+    font-size: 18px;
+    .info {
+      &-rules {
+        margin-bottom: 11px;
+        max-width: 520px;
+        line-height: 25px;
+      }
+      &-list {
+        li {
+          margin-bottom: 27px;
+          display: flex;
+          align-items: center;
+          img {
+            margin-left: 7px;
+            margin-right: 22px;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

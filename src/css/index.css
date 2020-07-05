@@ -236,4 +236,79 @@ a:hover {
   z-index: 4;
   position: absolute;
 }
+
+.discount__blocks {
+  padding: 94px 0 0 0;
+}
+
+.discount__header {
+  margin-bottom: 60px;
+  text-align: center;
+  font-family: Podkova;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.discount-info {
+  font-size: 18px;
+}
+
+.discount-info .info-rules {
+  margin-bottom: 11px;
+  max-width: 520px;
+  line-height: 25px;
+}
+
+.discount-info .info-list li {
+  margin-bottom: 27px;
+  display: flex;
+  align-items: center;
+}
+
+.discount-info .info-list li img {
+  margin-left: 7px;
+  margin-right: 22px;
+}
+
+.discount-info .info-list li:last-child {
+  margin-bottom: 0;
+}
+
+.about {
+  background: #fff9e9;
+}
+
+.about__blocks {
+  padding: 100px 0;
+}
+
+.about__header {
+  margin-bottom: 80px;
+  text-align: center;
+  font-family: Podkova;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.about-text {
+  font-size: 18px;
+  max-width: 515px;
+  line-height: 25px;
+}
+
+.about-text span {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.about-text span:last-child {
+  margin-bottom: 0;
+}
+
+.about-free {
+  top: 340%;
+  right: 0;
+  z-index: 4;
+  position: absolute;
+}
 /*# sourceMappingURL=index.css.map */
