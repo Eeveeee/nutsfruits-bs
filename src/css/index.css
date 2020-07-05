@@ -158,6 +158,7 @@ a:hover {
 }
 
 .catalog {
+  position: relative;
   background: #fff9e9;
 }
 
@@ -231,7 +232,7 @@ a:hover {
 }
 
 .catalog-free {
-  top: 130%;
+  bottom: 0;
   right: 0;
   z-index: 4;
   position: absolute;
@@ -275,6 +276,7 @@ a:hover {
 }
 
 .about {
+  position: relative;
   background: #fff9e9;
 }
 
@@ -306,8 +308,8 @@ a:hover {
 }
 
 .about-free {
-  top: 340%;
-  right: 0;
+  bottom: 0%;
+  right: 0%;
   z-index: 4;
   position: absolute;
 }
