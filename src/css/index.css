@@ -313,4 +313,42 @@ a:hover {
   z-index: 4;
   position: absolute;
 }
+
+.features__blocks {
+  padding: 100px 0;
+}
+
+.features__header {
+  margin-bottom: 68px;
+  color: #433232;
+  text-align: center;
+  font-family: Podkova;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.features__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features__card img {
+  margin-bottom: 38px;
+}
+
+.features__card h3 {
+  margin-bottom: 17px;
+  color: #433232;
+  font-family: Podkova;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.features__card p {
+  text-align: center;
+  line-height: 25px;
+  max-width: 338px;
+  font-size: 18px;
+}
 /*# sourceMappingURL=index.css.map */
