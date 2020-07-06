@@ -7,7 +7,7 @@
   &-contacts {
     display: flex;
     justify-content: space-between;
-    padding-right: 80px;
+    max-width: 378px;
     margin-bottom: 26px;
     .contacts {
       &-phone {
@@ -29,7 +29,7 @@
   &-navbar {
     display: flex;
     justify-content: space-between;
-    padding-right: 80px;
+    max-width: 378px;
     a {
       color: $text-color-light;
     }
@@ -43,7 +43,6 @@
   &-search {
     display: flex;
     align-items: center;
-    margin-top: 45px;
     input:first-child {
       font-family: Nunito;
       font-style: italic;
@@ -71,7 +70,6 @@
     display: flex;
     align-items: center;
     margin-left: 20px;
-    margin-top: 45px;
     cursor: pointer;
     color: $text-color-light;
     text-decoration: none;
@@ -85,6 +83,15 @@
     }
     img {
       margin-right: 10px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    &-search {
+      input:first-child {
+        width: 140px;
+      }
     }
   }
 }

@@ -5,7 +5,8 @@
     padding: 25px 0 37px 0;
   }
   &-navbar {
-    padding-right: 80px;
+    // padding-right: 80px;
+    max-width: 378px;
     display: flex;
     justify-content: space-between;
   }
@@ -17,11 +18,13 @@
   }
   &-hotline {
     margin-bottom: 25px;
-    padding-right: 80px;
+    // padding-right: 80px;
+    max-width: 378px;
     display: flex;
     justify-content: space-between;
   }
   &-social {
+    max-width: 378px;
     display: flex;
     justify-content: space-between;
     a {
