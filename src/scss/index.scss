@@ -20,3 +20,9 @@ a {
 @import "_features.scss";
 @import "_feedback.scss";
 @import "_footer.scss";
+
+@media (max-width: 992px) {
+  .free-nuts {
+    display: none;
+  }
+}
