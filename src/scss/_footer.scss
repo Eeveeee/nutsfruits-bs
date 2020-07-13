@@ -1,14 +1,19 @@
 .footer {
   background: $footer-background;
-  &__blocks {
+  &-wrap {
     color: $text-color-light;
     padding: 25px 0 37px 0;
   }
   &-navbar {
-    // padding-right: 80px;
     max-width: 378px;
     display: flex;
     justify-content: space-between;
+    a {
+      &:hover {
+        transition: 0.3s;
+        transform: scale(1.1);
+      }
+    }
   }
   &-logo {
     position: absolute;
@@ -28,9 +33,11 @@
     display: flex;
     justify-content: space-between;
     a {
-      img {
-        width: 20;
-        height: 23px;
+      transition: 0.4s;
+      width: 20px;
+      height: 23px;
+      &:hover {
+        transform: scale(1.5);
       }
     }
   }

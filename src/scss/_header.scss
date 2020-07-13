@@ -1,6 +1,7 @@
 .header {
   background: $header-background;
-  &__blocks {
+  &-wrap {
+    z-index: 3;
     padding: 26px 0;
     color: $text-color-light;
   }
@@ -32,11 +33,15 @@
     max-width: 378px;
     a {
       color: $text-color-light;
+      &:hover {
+        transition: 0.3s;
+        transform: scale(1.1);
+      }
     }
   }
   &-logo {
     position: absolute;
-    top: 40%;
+    top: 50%;
     border-radius: 50%;
     z-index: 4;
   }
@@ -74,12 +79,10 @@
     color: $text-color-light;
     text-decoration: none;
     &:hover {
+      transition: 0.3s;
+      transform: scale(1.1);
       text-decoration: none;
       color: $text-color-light;
-      span {
-        border-radius: 3px;
-        border-bottom: 1px solid white;
-      }
     }
     img {
       margin-right: 10px;

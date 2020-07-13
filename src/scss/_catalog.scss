@@ -1,7 +1,7 @@
 .catalog {
   position: relative;
   background: $theme-background-color;
-  &__blocks {
+  &-wrap {
     padding: 100px 0;
   }
   &__header {
