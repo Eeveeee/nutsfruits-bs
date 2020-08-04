@@ -2,11 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Document</title>
-    <!-- Reset  -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <!-- Fonts  -->
     <link
       href="https://fonts.googleapis.com/css2?family=Podkova:wght@700&display=swap"
       rel="stylesheet"
@@ -15,173 +12,128 @@
       href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-
-    <!-- CSS  -->
     <link rel="stylesheet" href="css/index.css" />
+    <link href="bundle.e3aeee472a608dca962c.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header-wrap">
-          <div class="row justify-content-end">
-            <div class="col-5 d-flex flex-column justify-content-around">
+          <div class="row">
+            <div class="col-12">
+              <div class="burger-button"></div>
               <div class="header-contacts">
-                <div class="contacts-phone">
-                  <img src="img/icons/call.svg" alt="" />
+                <div class="header__contact">
+                  <img src="../src/img/icons/call.svg" alt="" />
                   <span>8 800 165 22 45</span>
                 </div>
-                <div class="contacts-mail">
-                  <img src="img/icons/mail.svg" alt="" />
+                <div class="header__contact">
+                  <img src="../src/img/icons/mail.svg" alt="" />
                   <span>nutsfruits@gmail.com</span>
                 </div>
               </div>
-              <!-- /.header-contacts -->
-
-              <div class="header-navbar">
-                <a href="">Главная</a>
-                <a href="">Каталог</a>
-                <a href="">О нас</a>
-                <a href="">Доставка и оплата</a>
-              </div>
-              <!-- /.header-navbar -->
             </div>
-            <!-- /.col-5 -->
-
-            <div class="col-2 d-flex justify-content-center">
-              <div class="header-logo">
-                <img src="img/logo/logo.svg" alt="" />
-              </div>
-              <!-- /.header-logo -->
-            </div>
-            <!-- /.col-2 -->
-
-            <div class="col-3 d-flex align-items-end">
-              <form class="header-search">
-                <input type="search" placeholder="Поиск товара" />
-                <input type="submit" value="" />
-              </form>
-            </div>
-            <!-- /.col-3 -->
-
-            <div class="col-2 d-flex align-items-end">
-              <a href="" class="header-basket">
-                <img src="img/icons/basket.svg" alt="" />
-                <span>Корзина</span>
-              </a>
-            </div>
-            <!-- /.col-2 -->
           </div>
-          <!-- /.row -->
+
+          <div class="row">
+            <div class="col-5">
+              <nav class="header-navbar">
+                <a href="#" class="navbar-selector">
+                  <span>
+                    Главная
+                  </span>
+                </a>
+                <a href="#" class="navbar-selector">Каталог</a>
+                <a href="#" class="navbar-selector">О нас</a>
+                <a href="#" class="navbar-selector">
+                  Доставка и оплата
+                </a>
+              </nav>
+            </div>
+
+            <div class="col-2">
+              <div class="header-logo">
+                <img src="../src/img/logo/logo.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="col-5 d-flex align-items-end justify-content-between">
+              <div class="header-items">
+                <div class="header-search">
+                  <input type="text" placeholder="Поиск товара" />
+                </div>
+
+                <div class="header-basket">
+                  <img src="../src/img/icons/basket.svg" alt="" />
+                  <span>Корзина</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- /.header-wrap -->
       </div>
-      <!-- /.container -->
     </header>
-    <!-- /.header -->
 
     <section class="intro">
       <div class="container">
         <div class="intro-wrap">
           <div class="row">
             <div class="col-12">
-              <h1 class="intro__header">
-                Орехи и сухофрукты по низким ценам!
-              </h1>
-              <!-- /.intro__header -->
+              <h1 class="intro__header">Орехи и сухофрукты по низким ценам!</h1>
             </div>
-            <!-- /.col-12 -->
           </div>
-          <!-- /.row -->
           <div class="row">
             <div class="col-12">
               <div class="intro-arrow">
-                <img src="img/icons/arrow-down.svg" alt="" />
+                <img src="../src/" alt="" />
               </div>
-              <!-- /.intro-arrow -->
             </div>
-            <!-- /.col-12 -->
           </div>
-          <!-- /.row -->
         </div>
-        <!-- /.intro-wrap -->
       </div>
-      <!-- /.container -->
     </section>
-    <!-- /.intro -->
     <section class="catalog">
       <div class="container">
         <div class="catalog-wrap">
           <div class="row">
-            <div class="col-12">
-              <h2 class="catalog__header">Каталог</h2>
-              <!-- /.catalog__header -->
-            </div>
-            <!-- /.col-12 -->
+            <div class="col-12"><h2 class="catalog__header">Каталог</h2></div>
           </div>
-          <!-- /.row -->
-
           <div class="row">
-            <div class="col-4">
+            <div class="col-md-4 col-12">
               <div class="catalog-card card-nuts"><a href="">Орехи</a></div>
             </div>
-            <!-- /.col-4 -->
-
-            <div class="col-4">
+            <div class="col-md-4 col-12">
               <div class="catalog-card card-fruits">
                 <a href="">Сухофрукты</a>
               </div>
             </div>
-            <!-- /.col-4 -->
-
-            <div class="col-4">
+            <div class="col-md-4 col-12">
               <div class="catalog-card card-seeds"><a href="">Семечки</a></div>
             </div>
-            <!-- /.col-4 -->
           </div>
-          <!-- /.row -->
-
           <div class="row">
             <div class="col-12">
               <div class="catalog-card card-big">
                 <a href="">Смотреть всё!</a>
               </div>
             </div>
-            <!-- /.col-12 -->
           </div>
-          <!-- /.row -->
         </div>
-        <!-- /.catalog-wrap -->
       </div>
-      <!-- /.container -->
       <div class="catalog-free free-nuts">
-        <img src="img/catalog/leaves-and-nuts.svg" alt="" />
+        <img src="../src/img/catalog/leaves-and-nuts.svg" alt="" />
       </div>
-      <!-- /.catalog-free -->
     </section>
-    <!-- /.catalog -->
-
     <section class="discount">
       <div class="container">
         <div class="discount-wrap">
           <div class="row">
             <div class="col-12">
               <h2 class="discount__header">Больше — дешевле!</h2>
-              <!-- /.discount__header -->
             </div>
-            <!-- /.col-12 -->
           </div>
-          <!-- /.row -->
-
           <div class="row">
-            <div class="col-6">
+            <div class="col-md-6 col-12">
               <div class="discount-info">
                 <p class="info-rules">
                   Заказывайте вместе с друзьями, родственниками, коллегами и
@@ -189,8 +141,6 @@
                   <b>vmeste.</b>
                   Скидки при единовременном заказе:
                 </p>
-                <!-- /.info-rules -->
-
                 <ul class="info-list">
                   <li>
                     <span
@@ -202,7 +152,10 @@
                     >
                       5
                     </span>
-                    <img src="../src/img/icons/percent-green.svg" alt="" />
+                    <img
+                      src="../src/../src/img/icons/percent-green.svg"
+                      alt=""
+                    />
                     от 20 000 рублей
                   </li>
                   <li>
@@ -215,7 +168,10 @@
                     >
                       6
                     </span>
-                    <img src="../src/img/icons/percent-yellow.svg" alt="" />
+                    <img
+                      src="../src/../src/img/icons/percent-yellow.svg"
+                      alt=""
+                    />
                     от 50 000 рублей
                   </li>
                   <li>
@@ -228,7 +184,10 @@
                     >
                       7
                     </span>
-                    <img src="../src/img/icons/percent-orange.svg" alt="" />
+                    <img
+                      src="../src/../src/img/icons/percent-orange.svg"
+                      alt=""
+                    />
                     от 70 000 рублей
                   </li>
                   <li>
@@ -241,35 +200,29 @@
                     >
                       8
                     </span>
-                    <img src="../src/img/icons/percent-red.svg" alt="" />
+                    <img src="../src/../src/img/icons/percent-red.svg" alt="" />
                     от 100 000 рублей
                   </li>
                 </ul>
-                <!-- /.info-list -->
               </div>
-              <!-- /.discount-info -->
             </div>
-            <!-- /.col-7 -->
-            <div class="col-6">
-              <img class="discount__img" src="img/discount/nuts.png" alt="" />
+            <div class="col-md-6 col-12">
+              <img
+                class="discount__img"
+                src="../src/img/discount/nuts.png"
+                alt=""
+              />
             </div>
-            <!-- /.col-5 -->
           </div>
-          <!-- /.row -->
         </div>
-        <!-- /.discount-wrap -->
       </div>
-      <!-- /.container -->
     </section>
-    <!-- /.discount -->
-
     <section class="about">
       <div class="container">
         <div class="about-wrap">
           <h2 class="about__header">О нас</h2>
-          <!-- /.about__header -->
           <div class="row align-items-center">
-            <div class="col-7 d-flex justify-content-end">
+            <div class="col-md-7 col-12 d-flex justify-content-md-end">
               <p class="about-text">
                 <span>
                   В течение нескольких лет наша команда наладила контакт по
@@ -291,24 +244,16 @@
                   закупки, но и при сборе заказа!
                 </span>
               </p>
-              <!-- /.about-text -->
             </div>
-            <!-- /.col-7 -->
-
-            <div class="col-5">
-              <img src="img/about/nuts1.png" alt="" />
+            <div class="col-md-5 col-12">
+              <img src="../src/img/about/nuts1.png" alt="" />
             </div>
-            <!-- /.col-5 -->
           </div>
-          <!-- /.row -->
-
           <div class="row align-items-center">
-            <div class="col-5 d-flex justify-content-end">
-              <img src="img/about/nuts2.png" alt="" />
+            <div class="col-md-5 col-12 d-flex justify-content-md-end">
+              <img src="../src/img/about/nuts2.png" alt="" />
             </div>
-            <!-- /.col-5 -->
-
-            <div class="col-7">
+            <div class="col-md-7 col-12">
               <p class="about-text">
                 При получении продукции вы можете визуально проверить качество
                 товара до его оплаты. К товару прилагается инструкция по
@@ -316,20 +261,13 @@
                 скидок.
               </p>
             </div>
-            <!-- /.col-7 -->
           </div>
-          <!-- /.row -->
         </div>
-        <!-- /.about-wrap -->
       </div>
-      <!-- /.container -->
       <div class="about-free free-nuts">
-        <img src="img/catalog/leaves-and-nuts.svg" alt="" />
+        <img src="../src/img/catalog/leaves-and-nuts.svg" alt="" />
       </div>
-      <!-- /.about-free -->
     </section>
-    <!-- /.about -->
-
     <section class="features">
       <div class="container">
         <div class="features-wrap">
@@ -337,37 +275,31 @@
             <div class="col-12">
               <h2 class="features__header">Выбирая нас вы:</h2>
             </div>
-            <!-- /.col-12 -->
           </div>
-          <!-- /.row -->
           <div class="row">
-            <div class="col-4">
+            <div class="col-md-4 col-12">
               <div class="features__card">
-                <img src="img/features/medal.svg" alt="" />
+                <img src="../src/img/features/medal.svg" alt="" />
                 <h3>Получаете гарантию</h3>
                 <p>
                   Возврата товара и денежных средств. Все в соответствии с
-                  законом о защите прав потребителей. Подробнее...
+                  законом о защите прав потребителей.
                 </p>
               </div>
-              <!-- /.features__card -->
             </div>
-            <!-- /.col-4 -->
-            <div class="col-4">
+            <div class="col-md-4 col-12">
               <div class="features__card">
-                <img src="img/features/delivery.svg" alt="" />
+                <img src="../src/img/features/delivery.svg" alt="" />
                 <h3>Выбираете способ доставки</h3>
                 <p>
                   У нас различные удобные способы доставки по России и
-                  республике Беларусь! Подробнее...
+                  республике Беларусь!
                 </p>
               </div>
-              <!-- /.features__card -->
             </div>
-            <!-- /.col-4 -->
-            <div class="col-4">
+            <div class="col-md-4 col-12">
               <div class="features__card">
-                <img src="img/features/coins.svg" alt="" />
+                <img src="../src/img/features/coins.svg" alt="" />
                 <h3>Экономите деньги</h3>
                 <p>
                   Мы напрямую работаем
@@ -377,32 +309,19 @@
                   посредников!
                 </p>
               </div>
-              <!-- /.features__card -->
             </div>
-            <!-- /.col-4 -->
           </div>
-          <!-- /.row -->
         </div>
-        <!-- /.features-wrap -->
       </div>
-      <!-- /.container -->
     </section>
-    <!-- /.features -->
-
     <section class="feedback">
       <div class="container">
         <div class="feedback-wrap">
           <div class="row">
             <div class="col-12">
-              <h2 class="feedback__header">
-                Есть вопросы или предложения?
-              </h2>
-              <!-- /.feedback__header -->
+              <h2 class="feedback__header">Есть вопросы или предложения?</h2>
             </div>
-            <!-- /.col-12  -->
           </div>
-          <!-- /.row  -->
-
           <div class="row">
             <div class="col-12 d-flex align-items-center flex-column">
               <form action="#" class="feedback__form">
@@ -428,77 +347,69 @@
                   cols="15"
                   rows="8"
                 ></textarea>
-                <button type="submit" class="submit-button">Отправить</button>
+                <button href="#" type="submit" class="button button-submit">
+                  Отправить
+                </button>
               </form>
-              <!-- /.feedback__form -->
               <small>*Ваши данные не будут переданы третьим лицам</small>
             </div>
-            <!-- /.col-12 -->
           </div>
-          <!-- /.row -->
         </div>
-        <!-- /.feedback-wrap -->
       </div>
-      <!-- /.container -->
     </section>
-    <!-- /.feedback -->
-
     <footer class="footer">
       <div class="container">
         <div class="footer-wrap">
           <div class="row">
-            <div class="col-5">
+            <div class="col-md-5 col-12 order-xs-3">
               <div class="footer-navbar">
                 <a href="">Главная</a>
                 <a href="">Каталог</a>
                 <a href="">О нас</a>
                 <a href="">Доставка и оплата</a>
               </div>
-              <!-- /.footer-navbar -->
             </div>
-            <!-- /.col-5 -->
-
-            <div class="col-2 d-flex justify-content-center">
+            <div
+              class="col-md-2 col-12 d-md-flex justify-content-md-center order-xs-1"
+            >
               <div class="footer-logo">
-                <img src="img/logo/logo.svg" alt="" />
+                <img src="../src/img/logo/logo.svg" alt="" />
               </div>
-              <!-- /.footer-logo -->
             </div>
-            <!-- /.col-2 -->
-
-            <div class="col-5">
+            <div class="col-md-5 col-12 order-xs-2">
               <div class="footer-contacts">
                 <div class="footer-hotline">
                   <div class="contacts-phone">
-                    <img src="img/icons/call.svg" alt="" />
+                    <img src="../src/img/icons/call.svg" alt="" />
                     <span>8 800 165 22 45</span>
                   </div>
                   <div class="contacts-mail">
-                    <img src="img/icons/mail.svg" alt="" />
+                    <img src="../src/img/icons/mail.svg" alt="" />
                     <span>nutsfruits@gmail.com</span>
                   </div>
                 </div>
                 <div class="footer-social">
                   <span>Расскажите о нас в соцсетях</span>
-                  <a href="#"><img src="img/icons/vk.svg" alt="" /></a>
-                  <a href="#"><img src="img/icons/facebook.svg" alt="" /></a>
-                  <a href="#"><img src="img/icons/twitter.svg" alt="" /></a>
+                  <a href="#"><img src="../src/img/icons/vk.svg" alt="" /></a>
                   <a href="#">
-                    <img src="img/icons/instagram-sketched.svg" alt="" />
+                    <img src="../src/img/icons/facebook.svg" alt="" />
                   </a>
-                  <a href="#"><img src="img/icons/whatsapp.svg" alt="" /></a>
+                  <a href="#">
+                    <img src="../src/img/icons/twitter.svg" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="../src/img/icons/instagram-sketched.svg" alt="" />
+                  </a>
+                  <a href="#">
+                    <img src="../src/img/icons/whatsapp.svg" alt="" />
+                  </a>
                 </div>
-                <!-- /.footer-social -->
               </div>
-              <!-- /.footer-contacts -->
             </div>
-            <!-- /.col-5 -->
           </div>
         </div>
-        <!-- /.footer-wrap -->
       </div>
-      <!-- /.container -->
     </footer>
-    <!-- /.footer -->
+    <script src="bundle.e3aeee472a608dca962c.js"></script>
   </body>
 </html>

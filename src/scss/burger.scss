@@ -1,0 +1,18 @@
+.burger-button {
+  display: none;
+}
+
+@media(max-width:768px) {
+  .burger-button {
+    z-index: 1000;
+    display: block;
+    border: 2px solid black;
+    border-radius: 50%;
+    background: $theme-background-color;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 5.5%;
+    left: 4.5%;
+  }
+}
