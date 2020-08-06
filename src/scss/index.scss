@@ -1,6 +1,5 @@
 @import "~normalize.css";
 @import "_variables";
-@import "burger";
 @import "buttons";
 
 body {
@@ -35,7 +34,9 @@ a {
     text-decoration: none !important;
   }
 }
-
+img {
+  user-select: none;
+}
 @media (max-width: 992px) {
   .free-nuts {
     display: none;
@@ -43,6 +44,7 @@ a {
 }
 
 @import "header";
+@import "burger";
 @import "intro";
 @import "catalog";
 @import "discount";
