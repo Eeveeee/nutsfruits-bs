@@ -1,7 +1,11 @@
 .button {
+  color: $text-color-light;
+  background: $header-background;
   &-submit {
     color: $text-color-light;
     padding: 19px 0;
-    background: $header-background;
+  }
+  &-basket {
+    border-radius: 22px;
   }
 }
