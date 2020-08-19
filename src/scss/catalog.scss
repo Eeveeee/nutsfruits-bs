@@ -1,20 +1,55 @@
 .catalog {
   background: $theme-background-color;
   &-wrap {
-    padding: 60px 0;
+    padding: 60px 0 70px 0;
+  }
+  &-filter-wrapper {
+    z-index: 1;
+    position: relative;
+    background: url(../img/filter/bg.png);
+    &:before {
+      z-index: 2;
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.3);
+    }
   }
   &-filter {
+    padding: 40px 15px 35px 15px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    color: $text-color-light;
     .filter {
-      &-type,
-      &__param {
+      &-types {
+        margin-bottom: 30px;
+      }
+      &__type {
+        position: relative;
+        z-index: 3;
         label {
           span {
+            user-select: none;
             vertical-align: middle;
+            border-bottom: 2px solid transparent;
           }
           input {
             vertical-align: middle;
           }
+          &:hover {
+            span {
+              transition: 0.2s;
+              border-bottom: 2px solid rgba($text-color-light, 0.8);
+            }
+          }
         }
+      }
+      &-buttons {
+        text-align: center;
+        position: relative;
+        z-index: 3;
       }
     }
   }
@@ -26,11 +61,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 30px;
+    padding-top: 15px;
     margin-right: 5px;
     margin-bottom: 5px;
-    padding-top: 15px;
     width: 270px;
-    height: 362px;
     background: white;
     color: $text-color-dark;
     &:nth-child(3n) {
@@ -47,17 +82,64 @@
       }
       &-name {
         display: block;
+        font-weight: 500;
+        font-size: 24px;
       }
       &-price-wrap {
-        font-weight: bold;
-        font-size: 24px;
-        font-style: $font-podkova;
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 30px;
+        font-family: $font-podkova;
       }
       &-weight-wrap {
+        font-size: 18px;
+        font-family: $font-nunito;
         user-select: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 5px 0 5px;
       }
       &-weight-selector {
+        margin-bottom: 33px;
         display: flex;
+        button {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50px;
+          height: 50px;
+          font-size: 45px;
+          color: $text-color-dark;
+          background: transparent;
+          span {
+            margin-top: -1px;
+            background: black;
+            top: 50%;
+            position: absolute;
+            content: "";
+            display: block;
+            width: 30px;
+            height: 2px;
+          }
+        }
+        .button-plus {
+          span {
+            &:after {
+              box-shadow: none;
+              outline: none;
+              border: none;
+              background: black;
+              top: 50%;
+              content: "";
+              display: block;
+              width: 30px;
+              height: 2px;
+              transform: rotate(90deg);
+            }
+          }
+        }
       }
     }
   }

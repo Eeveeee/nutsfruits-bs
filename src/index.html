@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>NutsFruits</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Podkova:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Podkova:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap"
       rel="stylesheet"
     />
     <link
@@ -68,72 +72,70 @@
         <div class="catalog-wrap">
           <div class="row catalog-row">
             <div class="col-lg-3">
-              <form class="catalog-filter">
-                <div class="filter-accordion">
-                  <div class="filter-type">
-                    <label>
-                      <input
-                        data-checkbox-type="сухофрукты"
-                        class="filter-checkbox"
-                        type="checkbox"
-                      />
-                      <span>Сухофрукты</span>
-                    </label>
+              <div class="catalog-filter-wrapper">
+                <form class="catalog-filter">
+                  <div class="filter-types">
+                    <div class="filter__type">
+                      <label>
+                        <input
+                          data-checkbox-type="сухофрукты"
+                          class="filter-checkbox"
+                          type="checkbox"
+                        />
+                        <span>Сухофрукты</span>
+                      </label>
+                    </div>
+                    <div class="filter__type">
+                      <label>
+                        <input
+                          data-checkbox-type="семечки"
+                          class="filter-checkbox"
+                          type="checkbox"
+                        />
+                        <span>
+                          Семечки
+                        </span>
+                      </label>
+                    </div>
+                    <div class="filter__type">
+                      <label>
+                        <input
+                          data-checkbox-type="орехи"
+                          class="filter-checkbox"
+                          type="checkbox"
+                        />
+                        <span>Орехи</span>
+                      </label>
+                    </div>
+                    <div class="filter__type">
+                      <label>
+                        <input
+                          data-checkbox-type="+"
+                          class="filter-checkbox"
+                          type="checkbox"
+                        />
+                        <span>По возрастанию цены</span>
+                      </label>
+                    </div>
+                    <div class="filter__type">
+                      <label>
+                        <input
+                          data-checkbox-type="-"
+                          class="filter-checkbox"
+                          type="checkbox"
+                        />
+                        <span>По убыванию цены</span>
+                      </label>
+                    </div>
                   </div>
-                </div>
-                <div class="filter-accordion">
-                  <div class="filter-type">
-                    <label>
-                      <input
-                        data-checkbox-type="семечки"
-                        class="filter-checkbox"
-                        type="checkbox"
-                      />
-                      <span>
-                        Семечки
-                      </span>
-                    </label>
+                  <div class="filter-buttons">
+                    <button class="button button-sort">
+                      Сортировать
+                    </button>
+                    <button class="button button-reset">Сбросить все</button>
                   </div>
-                </div>
-                <div class="filter-accordion">
-                  <div class="filter-type">
-                    <label>
-                      <input
-                        data-checkbox-type="орехи"
-                        class="filter-checkbox"
-                        type="checkbox"
-                      />
-                      <span>Орехи</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="filter-params">
-                  <div class="filter__param">
-                    <label>
-                      <input
-                        data-checkbox-type="+"
-                        class="filter-checkbox"
-                        type="checkbox"
-                      />
-                      <span>По возрастанию цены</span>
-                    </label>
-                  </div>
-                  <div class="filter__param">
-                    <label>
-                      <input
-                        data-checkbox-type="-"
-                        class="filter-checkbox"
-                        type="checkbox"
-                      />
-                      <span>По убыванию цены</span>
-                    </label>
-                  </div>
-                </div>
-                <button class="button button-sort">
-                  Сортировать
-                </button>
-                <button class="button button-reset">Сбросить все</button>
-              </form>
+                </form>
+              </div>
             </div>
             <div class="col-lg-9 catalog-cards"></div>
           </div>

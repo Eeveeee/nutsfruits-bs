@@ -1,4 +1,5 @@
 import items from "./db";
+
 const cardsContainer = document.querySelector(".catalog-cards");
 
 export function init(items) {
@@ -13,19 +14,14 @@ export function init(items) {
       const currentCard = currentBtn.closest(".catalog__card");
       const currentCardId = currentCard.dataset.cardId;
       const price = currentCard.querySelector(".card-price");
+
       const weight = currentCard.querySelector(".card-weight");
       let diff = 0;
       let currentWeight = parseInt(weight.textContent);
 
-      items.forEach((el) => {
-        if (el.id == currentCardId) {
-          diff = parseInt(el.price / 100);
-        }
-      });
-
       switch (state) {
         case "-":
-          if (currentWeight <= 50) break;
+          if (currentWeight <= 100) break;
           weight.textContent = currentWeight - 50;
           break;
         case "+":
@@ -33,13 +29,18 @@ export function init(items) {
           weight.textContent = currentWeight + 50;
           break;
       }
+      items.forEach((el) => {
+        if (el.id == currentCardId) {
+          diff = parseInt(el.price / 100);
+        }
+      });
       price.textContent = parseInt(weight.textContent) * diff;
     };
   }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  init();
+  init(items);
 });
 
 export function createTemplate(el) {
@@ -49,9 +50,9 @@ export function createTemplate(el) {
   <title class="card-name">${el.name}</title>
   <div class="card-price-wrap"><span class="card-price">${el.price}</span>₽</div>
   <div class="card-weight-selector">
-  <button class="button button-minus">-</button>
+  <button class="button button-minus"><span></span></button>
   <div class="card-weight-wrap"><span class="card-weight">100</span>гр.</div>
-  <button class="button button-plus">+</button>
+  <button class="button button-plus"><span></span></button>
   </div>
     <button class="button button-basket">В корзину</button>
   </div>

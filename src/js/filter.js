@@ -35,7 +35,6 @@ resetButton.addEventListener("click", (e) => {
   toHTML(items);
   init(items);
   checkboxes.forEach((el) => {
-    el.classList.remove("checkbox-active");
     el.checked = false;
   });
 });
@@ -88,14 +87,3 @@ function checkState(types) {
   });
   return check.join("");
 }
-
-const arr = [1, 2, 5, 8, 10];
-
-const result = arr.reduce((acc, item) => {
-  if (item % 2 === 0) {
-    acc += item;
-  }
-  return acc;
-}, []);
-
-console.log(result);
