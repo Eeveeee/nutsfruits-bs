@@ -1,7 +1,12 @@
 .button {
   &-submit {
+    transition: 0.3s;
     color: $text-color-light;
     padding: 19px 0;
     background: $header-background;
+    &:hover {
+      transition: 0.3s;
+      background: lighten($header-background, 5%);
+    }
   }
 }

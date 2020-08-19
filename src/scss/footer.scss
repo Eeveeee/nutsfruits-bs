@@ -11,11 +11,14 @@
     max-width: 378px;
     display: flex;
     justify-content: space-between;
-
     a {
+      height: 25px;
+      border-bottom: 2px solid transparent;
+      transition: 0.4s;
+
       &:hover {
-        transition: 0.3s;
-        transform: scale(1.1);
+        border-bottom: 2px solid $text-color-light;
+        transition: 0.4s;
       }
     }
   }
@@ -47,13 +50,13 @@
       height: 23px;
 
       &:hover {
-        transform: scale(1.5);
+        transform: scale(1.2);
       }
     }
   }
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   .footer {
     &-logo {
       top: 3%;

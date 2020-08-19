@@ -32,7 +32,7 @@
 
     a {
       height: 25px;
-      border-bottom: 2px solid $header-background;
+      border-bottom: 2px solid transparent;
       transition: 0.4s;
 
       &:hover {
@@ -87,7 +87,8 @@
     height: 25px;
     display: flex;
     align-items: center;
-
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
     img {
       margin-right: 3px;
     }
