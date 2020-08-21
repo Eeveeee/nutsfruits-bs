@@ -1,7 +1,7 @@
 .footer {
   background: $footer-background;
   position: relative;
-
+  align-self: stretch;
   &-wrap {
     color: $text-color-light;
     padding: 25px 0 37px 0;

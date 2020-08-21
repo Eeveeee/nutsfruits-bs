@@ -1,8 +1,21 @@
 body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-family: "Nunito", sans-serif;
   color: pink;
 }
-
+.wrapper {
+  justify-content: space-between;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+.content {
+  flex-grow: 1;
+  background: $theme-background-color;
+}
 img {
   max-width: 100%;
 }
