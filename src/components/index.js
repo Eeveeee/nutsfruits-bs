@@ -1,0 +1,8 @@
+export { default as Header } from './header/Header'
+export { default as Intro } from './intro/Intro'
+export { default as Footer } from './footer/Footer'
+export { default as Catalog } from './catalog/Catalog'
+export { default as Discount } from './discount/Discount'
+export { default as About } from './about/About'
+export { default as Feedback } from './feedback/Feedback'
+export { default as Features } from './features/Features'

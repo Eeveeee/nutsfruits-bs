@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>NutsFruits</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Podkova:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header-wrap">
+            <div class="row">
+              <div class="col-12">
+                <div class="burger-button"><span></span></div>
+                <div class="header-contacts">
+                  <div class="header__phone">
+                    <img src="../src/img/icons/call.svg" alt="" />
+                    <span>8 800 165 22 45</span>
+                  </div>
+                  <div class="header__mail">
+                    <img src="../src/img/icons/mail.svg" alt="" />
+                    <span>nutsfruits@gmail.com</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 col-4">
+                <nav class="header-navbar">
+                  <a href="#" class="navbar-selector"><span>Главная</span></a>
+                  <a href="#" class="navbar-selector">Каталог</a>
+                  <a href="#" class="navbar-selector">О нас</a>
+                  <a href="#" class="navbar-selector">Доставка и оплата</a>
+                </nav>
+              </div>
+              <div class="col-md-2 col-4">
+                <div class="header-logo">
+                  <img src="../src/img/logo/logo.svg" alt="" />
+                </div>
+              </div>
+              <div
+                class="col-md-5 col-4 d-flex align-items-end justify-content-between"
+              >
+                <div class="header-items">
+                  <div class="header-search">
+                    <input type="text" placeholder="Поиск товара" />
+                  </div>
+                  <div class="header-basket">
+                    <img src="../src/img/icons/basket.svg" alt="" />
+                    <span>Корзина</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="content">
+        <section class="catalog">
+          <div class="container">
+            <div class="catalog-wrap">
+              <div class="row catalog-row">
+                <div class="col-lg-3">
+                  <div class="catalog-filter-wrapper">
+                    <form class="catalog-filter">
+                      <div class="filter-types">
+                        <div class="filter__type">
+                          <label>
+                            <input
+                              data-checkbox-type="сухофрукты"
+                              class="filter-checkbox"
+                              type="checkbox"
+                            />
+                            <span>Сухофрукты</span>
+                          </label>
+                        </div>
+                        <div class="filter__type">
+                          <label>
+                            <input
+                              data-checkbox-type="семечки"
+                              class="filter-checkbox"
+                              type="checkbox"
+                            />
+                            <span>Семечки</span>
+                          </label>
+                        </div>
+                        <div class="filter__type">
+                          <label>
+                            <input
+                              data-checkbox-type="орехи"
+                              class="filter-checkbox"
+                              type="checkbox"
+                            />
+                            <span>Орехи</span>
+                          </label>
+                        </div>
+                        <div class="filter__type">
+                          <label>
+                            <input
+                              data-checkbox-type="+"
+                              class="filter-checkbox"
+                              type="checkbox"
+                            />
+                            <span>По возрастанию цены</span>
+                          </label>
+                        </div>
+                        <div class="filter__type">
+                          <label>
+                            <input
+                              data-checkbox-type="-"
+                              class="filter-checkbox"
+                              type="checkbox"
+                            />
+                            <span>По убыванию цены</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="filter-buttons">
+                        <button class="button button-sort">Сортировать</button>
+                        <button class="button button-reset">
+                          Сбросить все
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-lg-9 catalog-cards"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-wrap">
+            <div class="row">
+              <div class="col-md-5 col-12 order-xs-3">
+                <div class="footer-navbar">
+                  <a href="">Главная</a>
+                  <a href="">Каталог</a>
+                  <a href="">О нас</a>
+                  <a href="">Доставка и оплата</a>
+                </div>
+              </div>
+              <div
+                class="col-md-2 col-12 d-md-flex justify-content-md-center order-xs-1"
+              >
+                <div class="footer-logo">
+                  <img src="../src/img/logo/logo.svg" alt="" />
+                </div>
+              </div>
+              <div class="col-md-5 col-12 order-xs-2">
+                <div class="footer-contacts">
+                  <div class="footer-hotline">
+                    <div class="contacts-phone">
+                      <img src="../src/img/icons/call.svg" alt="" />
+                      <span>8 800 165 22 45</span>
+                    </div>
+                    <div class="contacts-mail">
+                      <img src="../src/img/icons/mail.svg" alt="" />
+                      <span>nutsfruits@gmail.com</span>
+                    </div>
+                  </div>
+                  <div class="footer-social">
+                    <span>Расскажите о нас в соцсетях</span>
+                    <a href="#"><img src="../src/img/icons/vk.svg" alt="" /></a>
+                    <a href="#">
+                      <img src="../src/img/icons/facebook.svg" alt="" />
+                    </a>
+                    <a href="#">
+                      <img src="../src/img/icons/twitter.svg" alt="" />
+                    </a>
+                    <a href="#">
+                      <img
+                        src="../src/img/icons/instagram-sketched.svg"
+                        alt=""
+                      />
+                    </a>
+                    <a href="#">
+                      <img src="../src/img/icons/whatsapp.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

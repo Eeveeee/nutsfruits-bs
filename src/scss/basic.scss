@@ -1,0 +1,67 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Nunito", sans-serif;
+  color: pink;
+}
+#app {
+  justify-content: space-between;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+.wrapper {
+  flex-grow: 1;
+  background: $theme-background-color;
+}
+img {
+  max-width: 100%;
+}
+
+.button {
+  border: none;
+  outline: none !important;
+  user-select: none !important;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+.container {
+  max-width: 1170px;
+}
+
+a {
+  color: $text-color-light !important;
+
+  &:hover {
+    color: $text-color-light !important;
+    text-decoration: none !important;
+  }
+}
+img {
+  user-select: none;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+label {
+  cursor: pointer;
+  span {
+    user-select: none;
+  }
+  input {
+    cursor: inherit;
+  }
+}
+@media (max-width: 992px) {
+  .free-nuts {
+    display: none;
+  }
+}

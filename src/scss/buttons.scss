@@ -1,0 +1,48 @@
+.button {
+  color: $text-color-light;
+  background: $header-background;
+  &-submit {
+    color: $text-color-light;
+    padding: 19px 0;
+  }
+  &-basket {
+    transition: 0.3s;
+    padding: 11px 56px;
+    border-radius: 22px;
+    background: $footer-background;
+    color: $text-color-light;
+    &:hover {
+      transition: 0.3s;
+      background: darken($footer-background, 3%);
+    }
+  }
+  &-sort {
+    margin-bottom: 15px;
+    padding: 10px 44px;
+    border-radius: 21.5px;
+    transition: 0.3s;
+    background: $footer-background;
+    color: $text-color-light;
+    &:hover {
+      transition: 0.3s;
+      background: darken($footer-background, 3%);
+    }
+  }
+  &-reset {
+    transition: 0.3s;
+    padding: 10px 44px;
+    border-radius: 21.5px;
+    background: $text-color-light;
+    color: $text-color-dark;
+    &:hover {
+      transition: 0.3s;
+      background: darken($text-color-light, 15%);
+    }
+  }
+  &-plus {
+    border-left: 2px solid #000 !important;
+  }
+  &-minus {
+    border-right: 2px solid #000 !important;
+  }
+}

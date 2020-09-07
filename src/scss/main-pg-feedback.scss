@@ -1,0 +1,82 @@
+.feedback {
+  position: relative;
+  background: url(../img/feedback/background.png) center no-repeat;
+  background-size: cover;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4) center;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  &-wrap {
+    position: relative;
+    z-index: 2;
+    padding: 100px 0;
+  }
+
+  &__header {
+    margin-bottom: 60px;
+    color: $text-color-light;
+    text-align: center;
+    font-family: Podkova;
+    font-weight: bold;
+    font-size: 48px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      padding: 19px 0 19px 19px;
+      margin-bottom: 12px;
+      border: none;
+      background: rgba(255, 255, 255, 0.5);
+      width: 370px;
+
+      &::placeholder {
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+
+    textarea {
+      margin-top: 12px;
+      margin-bottom: 23px;
+      background: rgba(255, 255, 255, 0.5);
+      resize: none;
+      padding: 19px 0 0 19px;
+
+      &::placeholder {
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
+}
+
+.row .col-12 small {
+  margin-top: 10px;
+  color: $text-color-light;
+  font-size: 10px;
+}
+
+@media(max-width:480px) {
+  .feedback {
+    &__header {
+      font-size: 25px;
+    }
+
+    &__form {
+      input {
+        width: 280px;
+      }
+    }
+  }
+}
